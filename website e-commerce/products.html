@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            box-sizing:border-box;
+            background: radial-gradient(#ffffff,#ffd6d6);
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 50;
+            
+
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+            font-size: 20px;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+       ul li a{
+            text-decoration: none;
+            color: red;
+        }
+        ul li a:hover {
+            text-decoration-line:overline;
+            transition:.5s ease;
+            color: black;
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 55px;
+            padding-right: 85px;
+
+        }
+        .row{
+            display: flex;
+          
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col2{
+            flex-basis: 50%;
+            min-width: 300px;
+            
+
+        }
+         .col2 img{
+            max-width: 100%;
+            min-width: none;
+            margin-left: 22%;
+            margin-bottom: 3%;
+            
+         }
+         .col2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px;
+            margin-top: 85px;
+            margin-bottom: 20px;
+            
+         }
+         .btn{
+            display: inline-block;
+            background:#ff0000;
+            color:rgb(255, 255, 255);
+            padding: 12px 45px;
+            border-radius: 30px;
+            Margin: 16px;
+            transition: background 0.5s;
+
+         }
+         .btn:hover{
+            background: #000000;
+         }
+        
+         p{
+            font-size: 20px;
+         }
+         .fault{
+                margin: 70px 0;
+
+         }
+         .col-3{
+           flex-basis: 30%;
+           min-width: 250px;
+           margin-bottom: 30px;
+
+         }
+         .col-3 img{
+                   width: 90%;
+                  
+
+         }
+         .small-fault{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 30px;
+            padding-right: 35px;
+
+
+         }
+         .small-fault2{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+
+         }
+         
+         .col-4{
+            flex-basis: 25%;
+            padding: 0px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s ease;
+         }
+         .col-4 img{
+            width:250px;
+            display: inline;
+           
+
+         }
+         .title{
+            text-align: center;
+            margin-bottom:  50px ;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+         }
+         .title::after{
+            content:'';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+         h4{
+            color: #555;
+            font-weight: normal;
+         }
+         .col-4:hover{
+            transform: translateY(-5px);
+         }
+         .offer{
+            background: radial-gradient(#fff,#ffd6d6);
+            margin-top: 80px;
+            padding:30px 0;
+         }
+        
+         .arrange-offer{
+                    margin-top: 80px;
+         }
+         footer{
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding:60px 0 20px;
+         }
+         footer p{
+            color: #8a8a8a;
+
+         }
+         footer h3{
+            color:#fff;
+            margin-bottom: 20px;
+         }
+         .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+
+         }
+         .footer-col-1{
+            flex-basis: 30%;
+         }
+         .footer-col-2{
+            flex: 1;
+            text-align: center;
+         }
+         .footer-col-2 img{
+            width: 130px;
+            margin-bottom: 20px;
+            height:130px;
+
+         }
+         .footer-col-3,.footer-col-4{
+            flex-basis: 12%;
+            text-align: center;
+         }
+         ul{
+            list-style-type: none;
+
+         }
+         footer hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+         }
+         .copyright{
+            text-align: center;
+            color: #fff;
+         }
+         .menu-icon{
+            margin-left: 20px;
+            
+         }
+        .row-2{
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            display: flex;
+            
+        }
+       select{
+        border: 1px solid #ff523b;
+        padding: 5px;
+       }
+       select: focus{
+          outline: none;
+       }
+       .page-btn{
+        margin: 0 auto 80px;
+       }
+        .page-btn span{
+            display: inline-block;
+            border: 1px solid #ff523b;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .page-btn span:hover{
+            background: #ff523b;
+            
+        }
+                 
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products - Prime Web | E-commerce website</title>
+    
+</head>
+<body>
+    <header>
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Prime-web (2).png" width="100px" height="95px">
+            
+         </div>
+             <nav>
+    <ul>
+        <li><a href="Website wd.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="Login page.html">Account</a></li>
+    </ul>
+
+            </nav> 
+                 <img src="Cart.png" width="30px" height="30px">     
+                 <img src="menu.png" width="30px" height="30px" class="menu-icon"> 
+     </div>
+    
+   </div> 
+</header>
+
+
+
+ 
+<div class="small-fault2">
+    <div class="row-2">
+        <h2>All products</h2> <select >
+        
+            <option>Default shorting</option>
+            <option>Short by price</option>
+            <option>Short by popularity</option>
+            <option>Short by rating</option>
+            <option>Short by sales</option>
+         </select>
+       </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="T-shirt product.webp"  width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>Men Colorblock Hooded Neck Cotton<br> Blend Red, Black T-Shirt</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="shoes product.webp " width="200px" height="300px">
+            <p style="font-size: 15px;"><b>Casual Sneaker Shoes for Men | Soft<br>
+                 Cushioned Insole || Mexico-02<br> Sneakers For Men  (White, Beige , 8)</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1600 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="watch product.webp" width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>TIMEWEAR Slim Series Two Hands <br>Black Leather Strap Analog Watch - For Men</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="pant product.webp" width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>Men Regular Fit Black Lycra Blend Trousers</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        
+    </div>
+   
+    <div class="row">
+    <div class="col-4">
+        <img src="Image lp1.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Colorblock Men Track Suit</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1100 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp2.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Printed Men Track Suit
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.900 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp3.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Lace Walking Shoes For Boys 
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.700 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp4.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Analog Watch - For Men
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1800 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp5.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Men Typography Round Neck Cotton Blend Black T-Shirt
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.600 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp6.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Hoteon Skating Shoe have different size and with PU LED wheel In-line Skates
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.2200 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp7.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Jaspo Power Kids 26" inches for Beginners Boys & Girls 
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1900 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp8.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Xiaomi Pad 6 8 GB RAM 256 GB ROM 11.0 inch with Wi-Fi Only Tablet
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.55000 NPR</p> 
+    </div>
+
+
+</div>
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8228;&#8228;&#8228;</span>
+</div>
+</div>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>
+                    Download app for android and ios mobile phone.
+                </p>
+                <div class="app-logo">
+                    <img src="bg remove google apple.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="Prime-web (2).png" >
+                <p>our purpose is to let u all get good products at cheeper rate.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog-post</li>
+                    <li>Return policy</li>
+                    <li>Join affilate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>instagram </li>
+                    <li>Youtube </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright- Made by utkarsh</p>
+    </div>
+</footer>
+    
+</body>
+</html>

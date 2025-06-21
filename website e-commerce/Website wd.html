@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            box-sizing:border-box;
+
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 50;
+            
+
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+            font-size: 20px;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+       ul li a{
+            text-decoration: none;
+            color: red;
+        }
+        ul li a:hover {
+            text-decoration-line:overline;
+            transition:.5s ease;
+            color: black;
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 55px;
+            padding-right: 85px;
+
+        }
+        .row{
+            display: flex;
+          
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col2{
+            flex-basis: 50%;
+            min-width: 300px;
+            
+
+        }
+         .col2 img{
+            max-width: 100%;
+            min-width: none;
+            margin-left: 22%;
+            margin-bottom: 3%;
+            margin-top: 40px;
+            height: 450px;
+            
+         }
+         .col2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px;
+            margin-top: 85px;
+            margin-bottom: 20px;
+            
+         }
+         .btn{
+            display: inline-block;
+            background:#ff0000;
+            color:rgb(255, 255, 255);
+            padding: 12px 45px;
+            border-radius: 30px;
+            Margin: 16px;
+            transition: background 0.5s;
+
+         }
+         .btn:hover{
+            background: #000000;
+         }
+         header{
+            background: radial-gradient(#ffffff,#ffd6d6);
+            
+         }
+         p{
+            font-size: 20px;
+         }
+         .fault{
+                margin: 70px 0;
+
+         }
+         .col-3{
+           flex-basis: 30%;
+           min-width: 250px;
+           margin-bottom: 30px;
+
+         }
+         .col-3 img{
+                   width: 90%;
+                  
+
+         }
+         .small-fault{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 30px;
+            padding-right: 35px;
+
+
+         }
+         .small-fault2{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+
+         }
+         
+         .col-4{
+            flex-basis: 25%;
+            padding: 0px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s ease;
+         }
+         .col-4 img{
+            width:250px;
+            display: inline;
+           
+
+         }
+         .title{
+            text-align: center;
+            margin-bottom:  50px ;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+         }
+         .title::after{
+            content:'';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+         h4{
+            color: #555;
+            font-weight: normal;
+         }
+         .col-4:hover{
+            transform: translateY(-5px);
+         }
+         .offer{
+            background: radial-gradient(#fff,#ffd6d6);
+            margin-top: 80px;
+            padding:30px 0;
+         }
+        
+         .arrange-offer{
+                    margin-top: 80px;
+         }
+         footer{
+            background: #000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding:60px 0 20px;
+         }
+         footer p{
+            color: #8a8a8a;
+
+         }
+         footer h3{
+            color:#fff;
+            margin-bottom: 20px;
+         }
+         .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+
+         }
+         .footer-col-1{
+            flex-basis: 30%;
+         }
+         .footer-col-2{
+            flex: 1;
+            text-align: center;
+         }
+         .footer-col-2 img{
+            width: 130px;
+            margin-bottom: 20px;
+            height:130px;
+
+         }
+         .footer-col-3,.footer-col-4{
+            flex-basis: 12%;
+            text-align: center;
+         }
+         ul{
+            list-style-type: none;
+
+         }
+         footer hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+         }
+         .copyright{
+            text-align: center;
+            color: #fff;
+         }
+         .menu-icon{
+            margin-left: 20px;
+            
+         }
+
+/* Add this at the bottom of your existing CSS */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col2, .col-2, .col-3, .col-4, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col2 img, .col-2 img, .col-3 img, .col-4 img {
+        margin: auto;
+        display: block;
+        height: auto;
+        width: 90%;
+    }
+
+    .container, .small-fault, .small-fault2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+                 
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Web | E-commerce website</title>
+    
+</head>
+<body>
+    <header>
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Prime-web (2).png" width="100px" height="115px">
+            
+         </div>
+             <nav>
+    <ul>
+        <li><a href="Website wd.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="Login page.html">Account</a></li>
+    </ul>
+
+            </nav> 
+                 <img src="Cart.png" width="30px" height="30px">     
+                 <img src="menu.png" width="30px" height="30px" class="menu-icon"> 
+     </div>
+     <div class="row">
+        <div class="col2">
+          <h1> Shop Boldly, Pay Less<br>The Best Deals Awaits!</h1>
+          <p>At our online store, we believe that shopping should be a seamless blend of style,
+             quality, and affordability. That’s why we’ve curated a diverse collection of top-tier
+              products designed to meet your needs without breaking the bank. Whether you're looking 
+              for the latest trends, everyday essentials, or something special, you'll find it here 
+              – where quality always meets value. Discover the perfect balance between luxury and 
+              affordability, and enjoy a shopping experience that makes your dreams come true.
+          </p>
+          <a href="#" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col2">
+                 <img src="image fp3.png">
+        </div>
+     </div>
+   </div> 
+</header>
+
+
+   <div class="fault">
+    <div class="small-fault">
+        <div class="row">
+            <div class="col-3">
+                <img src="Watch 1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="Shoes1.jpg" >
+            </div>
+            <div class="col-3">
+                <img src="T-shirt product.webp">
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ <!--------featured products-------->
+<div class="small-fault2">
+    <h2 class="title">Featured products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="T-shirt product.webp"  width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>Men Colorblock Hooded Neck Cotton<br> Blend Red, Black T-Shirt</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="shoes product.webp " width="200px" height="300px">
+            <p style="font-size: 15px;"><b>Casual Sneaker Shoes for Men | Soft<br>
+                 Cushioned Insole || Mexico-02<br> Sneakers For Men  (White, Beige , 8)</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1600 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="watch product.webp" width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>TIMEWEAR Slim Series Two Hands <br>Black Leather Strap Analog Watch - For Men</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        <div class="col-4">
+            <img src="pant product.webp" width="200px" height="300px">
+            <p style="font-size: 15px;" ><b>Men Regular Fit Black Lycra Blend Trousers</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.800 NPR</p>
+            
+           
+        </div>
+        
+    </div>
+    <h2 class="title">Latest products</h2>
+    <div class="row">
+    <div class="col-4">
+        <img src="Image lp1.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Colorblock Men Track Suit</b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1100 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp2.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Printed Men Track Suit
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.900 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp3.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Lace Walking Shoes For Boys 
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.700 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp4.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Analog Watch - For Men
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1800 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp5.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Men Typography Round Neck Cotton Blend Black T-Shirt
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.600 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp6.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Hoteon Skating Shoe have different size and with PU LED wheel In-line Skates
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.2200 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp7.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Jaspo Power Kids 26" inches for Beginners Boys & Girls 
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.1900 NPR</p> 
+    </div>
+    <div class="col-4">
+        <img src="image lp8.webp"  width="200px" height="300px">
+        <p style="font-size: 15px;" ><b>Xiaomi Pad 6 8 GB RAM 256 GB ROM 11.0 inch with Wi-Fi Only Tablet
+        </b> <br>&#9733;&#9733;&#9733;&#9733;&#9734; <br>Rs.55000 NPR</p> 
+    </div>
+
+
+</div>
+</div>
+
+<div class="offer">
+    <div class="small-fault2">
+        <div class="row">
+            <div class="col-2">
+                <img src="image offer crop.png" height="400px" width="350px" class="offer-img">
+            </div>
+            <div class="col-2">
+                <div class="arrange-offer">
+               <b> <p>Exclusive availavle on prime web</p></b>
+                <h1>Smart watch</h1>
+               <p> "Unlock exclusive savings on the Smart watch! For a limited time only, enjoy<br> 50% off your purchase.
+                     Don't wait—this deal ends soon, and so doesthe opportunity<br> to own a piece of luxury at an unbeatable 
+                     price. Shop now and add elegance<br> to your wrist today!"
+
+                </p>
+                <a href="#" class="btn">Buy Now &#8594;</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>
+                    Download app for android and ios mobile phone.
+                </p>
+                <div class="app-logo">
+                    <img src="bg remove google apple.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="Prime-web (2).png" >
+                <p>our purpose is to let u all get good products at cheeper rate.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog-post</li>
+                    <li>Return policy</li>
+                    <li>Join affilate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>instagram </li>
+                    <li>Youtube </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright- Made by utkarsh</p>
+    </div>
+</footer>
+    
+</body>
+</html>
